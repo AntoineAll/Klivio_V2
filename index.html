@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Klivio – L'allié de votre progression</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          montserrat: ['Montserrat', 'sans-serif'],
+        },
+        colors: {
+          'klivio-white': '#FFFFFF',
+          'klivio-green': '#44DD8A',
+          'klivio-blue-night': '#152237',
+          'klivio-burger-white': '#FEF7FF',
+          'klivio-text': '#000000',
+          'klivio-light-gray': '#F7F7F7',
+          'klivio-star': '#FFC107',
+        },
+        backgroundImage: {
+          'klivio-gradient':
+            'linear-gradient(to right, #44DD8A, #15B7E2)',
+          'klivio-gradient-80':
+            'linear-gradient(to right, color-mix(in srgb, #44DD8A 80%, transparent), color-mix(in srgb, #15B7E2 80%, transparent))',
+        },
+      },
+    },
+  }
+</script>
+</head>
+
+<body class="font-montserrat text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-klivio-blue-night shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <img src="assets/images/logo.png" alt="Logo Klivio" class="h-10">
+
+    <nav class="hidden md:flex items-center gap-6">
+      <a href="#" class="font-semibold text-klivio-white :text-primary">Les formations</a>
+      <div class="relative">
+        <input type="text" placeholder="Rechercher" class="border rounded-full py-2 pl-4 pr-10 text-sm">
+        <i class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+      </div>
+    </nav>
+
+    <div class="hidden md:flex gap-3">
+      <a href="#" class="px-4 py-2 bg-klivio-white border border-primary rounded-full  hover:bg-klivio-blue-night hover:text-klivio-white">Connexion</a>
+      <a href="#" class="px-4 py-2 bg-klivio-gradient text-white rounded-full hover:bg-green-600">Inscription</a>
+    </div>
+
+    <button class="md:hidden text-2xl text-klivio-white"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="relative bg-cover bg-center" style="background-image: url('assets/images/bg-header.png');">
+  <div class="absolute inset-0 bg-klivio-gradient-80"></div>
+  <div class="relative max-w-7xl mx-auto px-4 py-28 text-center text-white">
+    <h2 class="text-3xl md:text-5xl font-bold mb-4">KLIVIO, L'ALLIÉ DE VOTRE PROGRESSION</h2>
+    <p class="text-lg mb-6">LES MEILLEURES FORMATIONS SUR LE DÉVELOPPEMENT PERSONNEL</p>
+    <a href="#" class="inline-block px-6 py-3 bg-klivio-white text-klivio-blue-night border border-klivio-green rounded-full hover:bg-klivio-green hover:text-klivio-blue-night transition">En savoir plus</a>
+  </div>
+</section>
+
+<!-- FORMATIONS POPULAIRES -->
+<section class="py-16">
+  <h2 class="text-3xl font-bold text-center mb-10">Les formations populaires</h2>
+
+  <div class="max-w-7xl mx-auto px-4 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+
+    <!-- Card 1 -->
+    <article class="bg-white rounded-xl shadow hover:shadow-lg transition">
+      <img src="assets/images/img-course.png" class="rounded-t-xl" alt="Parler en public">
+      <div class="p-4">
+        <span class="text-primary font-bold">15,99 € <s class="text-gray-400">60 €</s></span>
+        <h3 class="font-semibold mt-2">Parler en public</h3>
+        <p class="text-sm text-gray-500">Sonia Lefèvre | Coach prise de parole</p>
+        <div class="text-yellow-400 my-2">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="text-sm">Gagnez en aisance et captez votre auditoire</p>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="bg-white rounded-xl shadow hover:shadow-lg transition">
+      <img src="assets/images/img-course.png" class="rounded-t-xl" alt="Gérer le stress">
+      <div class="p-4">
+        <span class="text-primary font-bold">15,99 € <s class="text-gray-400">60 €</s></span>
+        <h3 class="font-semibold mt-2">Gérer le stress</h3>
+        <p class="text-sm text-gray-500">Lucie Garnier | Formatrice</p>
+        <div class="text-yellow-400 my-2">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+        </div>
+        <p class="text-sm">Apprenez à rester serein face aux défis</p>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="bg-white rounded-xl shadow hover:shadow-lg transition">
+      <img src="assets/images/img-course.png" class="rounded-t-xl" alt="Travailler en équipe">
+      <div class="p-4">
+        <span class="text-primary font-bold">15,99 € <s class="text-gray-400">60 €</s></span>
+        <h3 class="font-semibold mt-2">Travailler en équipe</h3>
+        <p class="text-sm text-gray-500">David Moreau | Expert</p>
+        <div class="text-yellow-400 my-2">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="text-sm">Collaborez efficacement, même à distance</p>
+      </div>
+    </article>
+
+    <!-- Card 4 -->
+    <article class="bg-white rounded-xl shadow hover:shadow-lg transition">
+      <img src="assets/images/img-course.png" class="rounded-t-xl" alt="Gérer son temps">
+      <div class="p-4">
+        <span class="text-primary font-bold">15,99 € <s class="text-gray-400">60 €</s></span>
+        <h3 class="font-semibold mt-2">Gérer son temps</h3>
+        <p class="text-sm text-gray-500">Claire Dumas | Coach organisation</p>
+        <div class="text-yellow-400 my-2">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+        </div>
+        <p class="text-sm">Optimisez vos journées et gagnez en efficacité</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="text-center mt-10">
+    <a href="#" class="inline-block px-6 py-3 bg-secondary text-white rounded-full hover:bg-gray-900">Voir plus de formations</a>
+  </div>
+</section>
+
+<!-- FORMATIONS RÉCENTES -->
+<section class="bg-klivio-blue-night py-16">
+  <h2 class="text-3xl font-bold text-white text-center mb-10">Les formations récentes</h2>
+
+  <div class="max-w-7xl mx-auto px-4 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+
+    <article class="bg-white rounded-xl shadow p-4">
+      <img src="assets/images/img-course.png" class="rounded-xl mb-4" alt="">
+      <span class="text-primary font-bold">15,99 € <s class="text-gray-400">60 €</s></span>
+      <h3 class="font-semibold mt-2">Mieux communiquer</h3>
+      <p class="text-sm text-gray-500">Julien Martel | Coach</p>
+      <div class="text-yellow-400 my-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      <p class="text-sm">Améliorez vos échanges et votre impact relationnel</p>
+    </article>
+
+    <article class="bg-white rounded-xl shadow p-4">
+      <img src="assets/images/img-course.png" class="rounded-xl mb-4" alt="">
+      <span class="text-primary font-bold">15,99 € <s class="text-gray-400">60 €</s></span>
+      <h3 class="font-semibold mt-2">Maîtriser ses émotions</h3>
+      <p class="text-sm text-gray-500">Amel Benali | Psychologue</p>
+      <div class="text-yellow-400 my-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      <p class="text-sm">Développez calme et intelligence émotionnelle</p>
+    </article>
+
+    <article class="bg-white rounded-xl shadow p-4">
+      <img src="assets/images/img-course.png" class="rounded-xl mb-4" alt="">
+      <span class="text-primary font-bold">15,99 € <s class="text-gray-400">60 €</s></span>
+      <h3 class="font-semibold mt-2">Résoudre les problèmes</h3>
+      <p class="text-sm text-gray-500">Thomas Rivière | Expert</p>
+      <div class="text-yellow-400 my-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+      <p class="text-sm">Analysez et trouvez des solutions durables</p>
+    </article>
+
+    <article class="bg-white rounded-xl shadow p-4">
+      <img src="assets/images/img-course.png" class="rounded-xl mb-4" alt="">
+      <span class="text-primary font-bold">15,99 € <s class="text-gray-400">60 €</s></span>
+      <h3 class="font-semibold mt-2">Leadership positif</h3>
+      <p class="text-sm text-gray-500">Marc Nguyen | Consultant</p>
+      <div class="text-yellow-400 my-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+      <p class="text-sm">Inspirez et fédérez votre équipe</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- AVIS CLIENTS -->
+<section class="py-16">
+  <h2 class="text-3xl font-bold text-center mb-10">AVIS CLIENTS</h2>
+  <div class="max-w-5xl mx-auto px-4 grid gap-8 md:grid-cols-2">
+
+    <div class="bg-white p-6 rounded-xl shadow text-center">
+      <img src="assets/images/juliette.png" class="w-20 h-20 mx-auto rounded-full mb-4" alt="">
+      <cite class="font-semibold">Juliette</cite>
+      <div class="text-yellow-400 my-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      <p class="text-sm">J’ai trouvé le parcours très bien structuré : vidéos courtes, quizzes pertinents et projets pratiques qui m’ont permis d’appliquer immédiatement les notions. 
+        L’interface est claire et la progression est motivante — parfait pour se former en autonomie.</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow text-center">
+      <img src="assets/images/camille.png" class="w-20 h-20 mx-auto rounded-full mb-4" alt="">
+      <cite class="font-semibold">Camille</cite>
+      <div class="text-yellow-400 my-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      <p class="text-sm">Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le support et les corrections automatiques ont vraiment aidé. 
+        Idéal pour démarrer et progresser rapidement.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- AVANTAGES KLIVIO -->
+<section class="bg-klivio-green py-16">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-3xl font-bold mb-6 text-klivio-white">LES AVANTAGES KLIVIO</h2>
+      <ul class="space-y-4 text-klivio-white">
+        <li class="flex gap-3">📌 Contenu qualitatif et vérifié</li>
+        <li class="flex gap-3">✍️ Exercices et QCM pour la mise en pratique</li>
+        <li class="flex gap-3">⬇️ Téléchargement et impression des formations</li>
+        <li class="flex gap-3">⭐ Contenus notés par les apprenants</li>
+        <li class="flex gap-3">⏰ Suivi en autonomie 24h/24, 7j/7</li>
+        <li class="flex gap-3">💬 Espaces d'échanges dédiés</li>
+      </ul>
+    </div>
+    <img src="assets/images/avantages.png" alt="Avantages Klivio" class="rounded-xl shadow">
+  </div>
+</section>
+
+<!-- DEVENIR FORMATEUR -->
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+    <img src="assets/images/become-author.png" alt="Créer une formation" class="rounded-xl shadow">
+    <div>
+      <h2 class="text-3xl font-bold mb-6">CRÉEZ VOS FORMATIONS AVEC KLIVIO</h2>
+      <ul class="space-y-4">
+        <li>💰 Commission unique sur les ventes</li>
+        <li>❤️ Mise en avant sur la plateforme</li>
+        <li>✏️ Contrôle total sur le contenu et le prix</li>
+        <li>⚙️ Fonctionnalités avancées (QCM, stats, codes promos…)</li>
+        <li>👤 Propriété intellectuelle conservée à 100%</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- À PROPOS -->
+<section class="bg-klivio-blue-night py-16">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-3xl font-bold mb-6 text-klivio-white">À PROPOS DE KLIVIO</h2>
+      <p class="text-klivio-white leading-relaxed">
+        Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre approche éducative. 
+        Nous nous engageons à assurer une rémunération équitable pour les créateurs de contenu, reconnaissant la qualité de leur travail.<br><br>
+        Favorisant l'autonomie d'apprentissage, notre plateforme offre la flexibilité  nécessaire pour explorer divers sujets. 
+        La transparence est au cœur de notre démarche, garantissant une clarté totale sur les formations que les instructeurs proposent. 
+        Ensemble, ces valeurs forment le socle d'une  éducation enrichissante et équitable, guidant notre mission d'offrir des opportunités d'apprentissage de qualité.
+      </p>
+    </div>
+    <div class="flex justify-center">
+      <img src="assets/images/logo.png" alt="Logo Klivio" class="h-32">
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="bg-gray-100 py-16">
+  <h2 class="text-3xl font-bold text-center mb-8">NOUS CONTACTER</h2>
+  <div class="max-w-4xl mx-auto px-4 grid gap-6">
+    <div class="grid md:grid-cols-2 gap-4">
+      <input type="text" placeholder="Nom" class="border p-3 rounded">
+      <input type="email" placeholder="Email" class="border p-3 rounded">
+    </div>
+    <textarea placeholder="Votre message" class="border p-3 rounded h-32"></textarea>
+    <button class="mx-auto px-8 py-3 bg-klivio-green text-white rounded-full hover:bg-green-600">Envoyer</button>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-klivio-blue-night text-white py-10">
+  <div class="max-w-7xl mx-auto px-4 grid gap-8 md:grid-cols-3">
+
+    <div>
+      <img src="assets/images/logo.png" class="h-10 mb-4" alt="">
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Mentions légales</a></li>
+        <li><a href="#" class="hover:underline">CGU</a></li>
+        <li><a href="#" class="hover:underline">CGV</a></li>
+        <li><a href="#" class="hover:underline">FAQ</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="text-sm">
+      <p class="font-semibold mb-2">Coordonnées</p>
+      <p>1 place République, 75003</p>
+      <p>01.02.03.04.05</p>
+      <p>contact@klivio.fr</p>
+    </div>
+
+    <div>
+      <div class="flex gap-3 mb-4">
+        <a href="#" class="px-4 py-2 border rounded-full">Connexion</a>
+        <a href="#" class="px-4 py-2 bg-primary rounded-full">Inscription</a>
+      </div>
+      <div class="flex gap-4 text-xl">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+
+  </div>
+  <p class="text-center text-sm mt-8">© Klivio - 2025</p>
+</footer>
+
+</body>
+</html>
